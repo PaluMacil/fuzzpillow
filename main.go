@@ -199,7 +199,7 @@ func generatePinkNoise(samples []float32) []float32 {
 func generateMinorNoise(samples []float32, numSamples int) []float32 {
 	notes := make([]float64, 16)
 	for i := range notes {
-		octave := 2 + rand.Intn(3) // 2nd to 4th octave
+		octave := 2 + rand.Intn(3) // 2nd tof 4th octave
 		step := rand.Intn(7)       // step within the octave
 		notes[i] = 440 * math.Pow(2, float64(octave+step)/12)
 	}
